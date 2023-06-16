@@ -3,7 +3,7 @@ import salad from "../components/img/greek_salad.png"
 import brucheeta from "../components/img/bruchetta.png"
 import dessert from "../components/img/lemon_dessert.jpg"
 import Card from "../components/Cards"
-import "./Card.css";
+import "../CSS/Card.css";
 import Button from '@mui/material/Button';
 
 const Main = () => {

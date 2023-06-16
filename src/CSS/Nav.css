@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fef7e5;
+    padding: 20px 80px;
+}
+.nav-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-element li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;   
+}
+
+.nav-element li a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.nav-element li a:hover{
+color: green;
+}
+
+.nav-element li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
