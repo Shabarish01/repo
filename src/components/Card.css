@@ -1,0 +1,41 @@
+.card{
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    width: 250px;
+    margin: 20px;
+}
+
+.card-image {
+    width: 249px;
+}
+.card-title,
+.description{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.card-price{
+    text-align: center;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.description{
+    font-size: 12px;
+}
+
+.food-cards {
+    display: flex;
+    margin-left: 15%;
+}
+.Main-header{
+    font-weight: bold;
+    color: red;
+    margin-left: 5%;
+}
+.Main-button{
+    display: inline;
+    text-align: center;
+}
