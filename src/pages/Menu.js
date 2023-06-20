@@ -1,10 +1,12 @@
 import React from 'react'
-import Nav from "../components/Nav"
+
 
 function Menu() {
   return (
-    <Nav />
+    <div>
+    </div>
+    
   )
 }
 
-export default Menu
+export default Menu;

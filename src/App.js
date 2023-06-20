@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import Menu from "./pages/Menu";
-import login from "./pages/login";
+import Login from "./pages/Login";
 import Reservation from "./pages/Reservations"
 import Online from "./pages/Online";
 import Home from "./pages/Home"
@@ -19,14 +19,14 @@ function App() {
   <>
       <Nav />
       <Routes>
-        <Route path="/Home" component={Home} />
-        <Route path="/About" component={About} />
-        <Route path="/Menu" component={Menu} />
-        <Route path="/Reservation" component={Reservation} />
-        <Route path="/Online" component={Online} />
-        <Route path="/login" component={login} />
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Menu" element={<Menu />} />
+        <Route path="/Reservation" element={<Reservation />} />
+        <Route path="/Online" element={<Online />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-   {/*<Header /> */}
+   <Header />
   <Main />
   <Footer />
   </>

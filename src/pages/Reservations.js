@@ -1,11 +1,12 @@
 import React from 'react'
-import Nav from "../components/Nav"
 
 function Reservations() {
   return (
-    <Nav />
+    <div>
+      <h1 className='warning'>APP under progress</h1>
+    </div>
 
   )
 }
 
-export default Reservations
+export default Reservations;

@@ -1,38 +1,115 @@
-.container {
+.app_navbar {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #fef7e5;
-    padding: 20px 80px;
-}
-.nav-element {
-    display: flex;
     align-items: center;
+    background-color: #fceecc;
+    padding: 20px 80px;
+    font-family: 'Markazi Text', serif;
+}
+
+
+.app_navbar_logo {
+    display: flex;
     justify-content: center;
-}
-.nav-element li{
-    list-style: none;
-    padding: 0 20px;
-    position: relative;   
+    align-items: center;
 }
 
-.nav-element li a{
+.app_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.app_navbar-links li a {
     text-decoration: none;
-    font-size: 1.0rem;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     color: black;
-    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
-.nav-element li a:hover{
-color: green;
+.app_navbar-links li a:hover {
+    background-color: #2fbf71;
 }
-
-.nav-element li a:hover::after{
+.app_navbar-links li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
-    background-color: green;
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+.app_navbar-menu{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    z-index: 2;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.app_navbar-menu > div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+    background-color: #fceecc;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.app_navbar-cancel {
+    width: 35px;
+    height: 35px;
+    color: #495E57;
+}
+.app_navbar-menu > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.app_navbar-menu > div > .link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+}
+
+@media screen and (min-width: 900px) {
+    .app_navbar-menu {
+        display: none;
+    }
+    .app_navbar-menu > div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app_navbar-links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .p-text{
+        font-size: 1.75rem;
+    }
 }
