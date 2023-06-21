@@ -26,9 +26,9 @@ const Main = () => {
 debugger;
     return (
         <>
-        <div>
+        <div className="Main-container">
         <h1 className="Main-header">SPECIAL DISHESH!!!</h1>
-        <Button variant="contained" color="warning">Grab more</Button>
+        <Button className="Main-button" variant="contained" color="warning">Grab more</Button>
         </div>
         <div className="food-cards">
             <Card data={cardData} />

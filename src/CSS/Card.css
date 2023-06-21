@@ -30,12 +30,19 @@
     display: flex;
     margin-left: 15%;
 }
-.Main-header{
+.Main-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Main-header {
     font-weight: bold;
-    color: red;
+    color: green;
     margin-left: 5%;
-}
-.Main-button{
-    display: inline;
-    text-align: center;
-}
+  }
+
+  .Main-button {
+    text-align: right;
+    float: right;
+    margin-left: -5%;
+  }

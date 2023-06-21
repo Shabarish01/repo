@@ -34,7 +34,7 @@ const Nav = () => {
             <Link className="link" to={"/Reservation"} onClick={()=>{setToggle(false)}}>Reservation</Link>
             <Link className="link" to={"/online"} onClick={()=>{setToggle(false)}}>Online</Link>
             <Link className="link" to={"/login"} onClick={()=>{setToggle(false)}}>Login</Link>
-        </div>)} 
+        </div>)}
       </div>
     </nav>
     );

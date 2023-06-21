@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: orange;
     z-index: 2;
     position: fixed;
     top: 20px;
