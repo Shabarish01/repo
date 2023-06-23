@@ -1,4 +1,24 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Markazi Text", "Karla", serif;
 }
+
+label,
+input,
+select,
+textarea,
+p {
+  font-family: "Karla";
+}
+
+input,
+select,
+option,
+textarea {
+  background-color: #eeeeee;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 0.2rem;
+  resize: none;
+}
+
 

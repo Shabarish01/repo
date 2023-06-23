@@ -7,8 +7,7 @@ import Online from "./pages/Online";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Nav from "./components/Nav";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import "./CSS/App.css"
 import Footer from "./components/Footer";
 
 
@@ -26,8 +25,6 @@ function App() {
         <Route path="/Online" element={<Online />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-   <Header />
-  <Main />
   <Footer />
   </>
   );

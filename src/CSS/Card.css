@@ -1,48 +1,69 @@
-.card{
+.card {
     border: 1px solid black;
     box-shadow: 0 0 5px black;
     width: 250px;
     margin: 20px;
-}
-
-.card-image {
+  }
+  
+  .card-image {
     width: 249px;
-}
-.card-title,
-.description{
+  }
+  
+  .card-title,
+  .description {
     text-align: center;
     margin: 0;
     padding: 10px;
-}
-.card-price{
-    text-align: center;
-}
-.card-title{
+    font-size: 18px;
+  }
+  
+  .card-title {
     font-weight: bold;
-    font-size: 14px;
-}
-
-.description{
-    font-size: 12px;
-}
-
-.food-cards {
+  }
+  
+  .card-price {
+    text-align: center;
+  }
+  
+  .food-cards {
     display: flex;
     margin-left: 15%;
-}
-.Main-container {
+    flex-wrap: wrap; /* Added to wrap cards to the next line */
+  }
+  
+  .Main-container {
     display: flex;
+    flex-wrap: wrap; /* Added to wrap header and button to the next line */
     justify-content: space-between;
   }
-
+  
   .Main-header {
     font-weight: bold;
     color: green;
     margin-left: 5%;
+    width: 100%; /* Added to expand header to full width */
+    text-align: center; /* Center align the header */
+  }
+  
+  .Main-button {
+    text-align: center;
+    margin-left: -15%;
+    background-color: #495e57;
+    width: 50%; /* Added to expand button to full width */
   }
 
-  .Main-button {
-    text-align: right;
-    float: right;
-    margin-left: -5%;
+  /* Responsive styles for mobile devices */
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 50%; /* Make the cards take full width on mobile devices */
+      margin: 10px 0; /* Adjust margin for mobile devices */
+    }
+
+    .food-cards {
+      margin-left: 0;
+    }
+
+    .Main-container {
+      flex-direction: column; /* Stack header and button vertically on mobile devices */
+    }
   }
