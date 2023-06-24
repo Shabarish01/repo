@@ -39,28 +39,45 @@
   
   .Main-header {
     font-weight: bold;
-    color: green;
+    color: black;
+    font-family: 'Roboto', sans-serif;
     margin-left: 5%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     width: 100%; /* Added to expand header to full width */
-    text-align: center; /* Center align the header */
+    text-align: left; /* Center align the header */
   }
-  
-  .Main-button {
+  .Main-btn {
+    background-color: #F4CE14;
+    border: none;
+    outline: none;
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: #040404;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
     text-align: center;
-    margin-left: -15%;
-    background-color: #495e57;
-    width: 50%; /* Added to expand button to full width */
+    padding: 10px 22px;
+    cursor: pointer;
   }
 
+
+
   /* Responsive styles for mobile devices */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
     .card {
       width: 50%; /* Make the cards take full width on mobile devices */
-      margin: 10px 0; /* Adjust margin for mobile devices */
+      margin: 10px 0;
+      gap: 5%; /* Adjust margin for mobile devices */
     }
 
     .food-cards {
       margin-left: 0;
+    }
+    .Main-btn{
+      width: fit-content;
     }
 
     .Main-container {

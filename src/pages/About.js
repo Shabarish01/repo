@@ -1,7 +1,7 @@
 import React from 'react';
 import image1 from "../components/img/Mario_Adrian_1low.jpeg";
 import image2 from "../components/img/Mario_Adrian_2up.jpg";
-
+import "../CSS/About.css"
 const aboutData = {
   title: "Little Lemon",
   subTitle: "Munich",
@@ -12,9 +12,9 @@ const aboutData = {
 
 const About = () => {
   return (
-    <>
+    <section>
       <div className="app_section-about">
-        <div className="app_about-description">
+        <div className="app_about-content">
           <h1 className="app_about-title">{aboutData.title}</h1>
           <br />
           <h4 className="app_about-subtitle">{aboutData.subTitle}</h4>
@@ -22,26 +22,15 @@ const About = () => {
           <p className="app_about-description">
             {aboutData.description}
             <br />
-            <br />
           </p>
         </div>
 
-        <div className="app_about-image-holder">
-          <div
-            className="app_about-image-box img-box-1"
-            style={{
-              backgroundImage: `url(${aboutData.image2})`,
-            }}
-          />
-          <div
-            className="app_about-image-box img-box-2"
-            style={{
-              backgroundImage: `url(${aboutData.image1})`,
-            }}
-          />
+        <div className="image-holder">
+          <img className="about-1" src={image1} alt="Little Lemon restaurant cuisine 1" />
+          <img className="about-2" src={image2} alt="Little Lemon restaurant cuisine 2" />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

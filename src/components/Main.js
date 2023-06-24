@@ -4,7 +4,6 @@ import brucheeta from "../components/img/bruchetta.png"
 import dessert from "../components/img/lemon_dessert.jpg"
 import Card from "../components/Cards"
 import "../CSS/Card.css";
-import { MDBBtn } from 'mdb-react-ui-kit';
 
 const Main = () => {
     const cardData =[{
@@ -28,7 +27,9 @@ debugger;
         <>
         <div className="Main-container">
         <h1 className="Main-header">SPECIAL DISHESH!!!</h1>
-        <MDBBtn className="Main-button"  color='warning' >Grab More</MDBBtn>
+        <button className="Main-btn">
+          Grab More
+        </button>
         </div>
         <div className="food-cards">
             <Card data={cardData} />
