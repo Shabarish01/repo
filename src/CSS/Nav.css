@@ -21,14 +21,16 @@
     justify-content: right;
     align-items: center;
     gap: 50px;
+    font-family: 'Roboto', sans-serif;
     list-style-type: none;
 }
 
 .app_navbar-links li a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: black;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }

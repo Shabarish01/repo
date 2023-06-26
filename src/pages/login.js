@@ -30,11 +30,11 @@ const Login = () => {
 
   return (
     <div>
-      <div>
+      <div className='app_Signup'>
       <h2 style={{ textAlign: 'center'}}>Signup Form</h2>
       {successful && <p>{successful}</p>}
       <form onSubmit={formik.handleSubmit}>
-      <div>
+      <div className='app_fname'>
           <label className="firstName">First Name</label>
           <input
             type="text"
@@ -46,7 +46,7 @@ const Login = () => {
             <div>{formik.errors.firstName}</div>
           )}
         </div>
-        <div>
+        <div className='app_lname'>
           <label className="lastName">Last Name</label>
           <input
             type="text"
@@ -58,7 +58,7 @@ const Login = () => {
             <div>{formik.errors.lastName}</div>
           )}
         </div>
-        <div>
+        <div className='app_email'>
           <label className="email">Email</label>
           <input
             type="email"
@@ -70,7 +70,7 @@ const Login = () => {
             <div>{formik.errors.email}</div>
           )}
         </div>
-        <div>
+        <div className='password'>
           <label className="password">Password</label>
           <input
             type="password"

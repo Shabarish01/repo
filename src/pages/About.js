@@ -2,10 +2,11 @@ import React from 'react';
 import image1 from "../components/img/Mario_Adrian_1low.jpeg";
 import image2 from "../components/img/Mario_Adrian_2up.jpg";
 import "../CSS/About.css"
+
 const aboutData = {
   title: "Little Lemon",
   subTitle: "Munich",
-  description: "Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.",
+  description: "Little Lemon opened in 1995 by two Schmizt brothers. Despite the city's diversity, the two brothers recognized the lack of Mediterranean cuisine in Chicago, and were inspired to bring the flavors of their hometown in Italy to the people of Chicago. The two brothers continue to oversee the Little Lemon restaurant, nearly thirty years late ",
   image1,
   image2,
 };
