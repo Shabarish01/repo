@@ -9,15 +9,21 @@
     width: 249px;
   }
   
-  .card-title,
-  .description {
+  .card-title {
     text-align: center;
     margin: 0;
     padding: 10px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
   }
-  
+  .description {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+
   .card-title {
     font-weight: bold;
   }
@@ -29,39 +35,45 @@
   .food-cards {
     display: flex;
     margin-left: 15%;
-    flex-wrap: wrap; /* Added to wrap cards to the next line */
+    flex-wrap: wrap; 
+    margin-top: 1rem;/* Added to wrap cards to the next line */
   }
   
   .Main-container {
     display: flex;
     flex-wrap: wrap; /* Added to wrap header and button to the next line */
     justify-content: space-between;
+    background-color: rgb(237, 231, 224);
   }
   
   .Main-header {
     font-weight: bold;
     color: black;
     font-family: 'Roboto', sans-serif;
-    margin-left: 5%;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-left: 15%;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
     width: 100%; /* Added to expand header to full width */
     text-align: left; /* Center align the header */
   }
-  .Main-btn {
-    background-color: #F4CE14;
-    border: none;
-    outline: none;
-    margin-left: 5%;
-    font-family: 'Roboto', sans-serif;
-    color: #040404;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding: 10px 22px;
-    cursor: pointer;
+  .action-button {
+    background-color: #f4ce14;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin-left: 15%;
+    text-decoration: none;
+    color: black;
+    font-family: "Karla";
+    font-size: 1rem;
+  }
+  
+  .action-button:hover {
+    background-color: #495e57;
+    color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #edefee;
+    transition: 0.2s;
   }
 
 

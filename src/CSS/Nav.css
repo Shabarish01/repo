@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fceecc;
+    background-color: #fdf4e0;
     padding: 20px 80px;
     font-family: 'Markazi Text', serif;
 }
@@ -21,21 +21,19 @@
     justify-content: right;
     align-items: center;
     gap: 50px;
-    font-family: 'Roboto', sans-serif;
     list-style-type: none;
 }
 
 .app_navbar-links li a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
 .app_navbar-links li a:hover {
-    background-color: #2fbf71;
+    background-color: yellow;
 }
 .app_navbar-links li a:hover::after{
     content: "";

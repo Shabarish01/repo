@@ -33,7 +33,7 @@ const Login = () => {
       <div className='app_Signup'>
       <h2 style={{ textAlign: 'center'}}>Signup Form</h2>
       {successful && <p>{successful}</p>}
-      <form onSubmit={formik.handleSubmit}>
+      <form className="app_form" onSubmit={formik.handleSubmit}>
       <div className='app_fname'>
           <label className="firstName">First Name</label>
           <input

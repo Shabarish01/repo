@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import { Link } from 'react-router-dom';
-import img3 from "../components/img/restaurantfood.jpeg"
+import img3 from "../components/img/767042.jpg"
 import dayjs from 'dayjs';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -38,6 +38,7 @@ function Reservations() {
             id='fname'
             placeholder="firstName"
             name="firstName"
+            value={fName}
             onChange={(e) => setFName(e.target.value)}></input>
           </div>
           <div className='Reserved-Name'>
@@ -47,6 +48,7 @@ function Reservations() {
             id='lname'
             placeholder="Last-Name"
             name="lastName"
+            value={lName}
             onChange={(e) => setLName(e.target.value)}></input>
           </div>
           <div className='Reserved-email'>
@@ -56,6 +58,7 @@ function Reservations() {
             id='email'
             placeholder="email"
             name="email"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}>
             </input>
           </div>

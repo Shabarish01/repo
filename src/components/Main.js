@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import salad from "../components/img/greek_salad.png"
 import brucheeta from "../components/img/bruchetta.png"
 import dessert from "../components/img/lemon_dessert.jpg"
@@ -25,15 +26,15 @@ const Main = () => {
 debugger;
     return (
         <>
-        <div className="Main-container">
+        <section className="Main-container">
+        <div>
         <h1 className="Main-header">SPECIAL DISHESH!!!</h1>
-        <button className="Main-btn">
-          Grab More
-        </button>
+        <Link className="action-button" to="/Online">Order Online</Link>
         </div>
         <div className="food-cards">
             <Card data={cardData} />
         </div>
+        </section>
         </>
     )
 };
