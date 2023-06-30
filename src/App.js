@@ -7,6 +7,7 @@ import Online from "./pages/Online";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Nav from "./components/Nav";
+import Confirmation from "./pages/Confirmation"
 import "./CSS/App.css"
 import Footer from "./components/Footer";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Reservation" element={<Reservation />} />
         <Route path="/Online" element={<Online />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Confirmation" element={<Confirmation />} />
       </Routes>
   <Footer />
   </>

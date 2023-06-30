@@ -29,16 +29,16 @@ const Login = () => {
   });
 
   return (
-    <div>
+    <section className='body_login'>
       <div className='app_Signup'>
-      <h2 style={{ textAlign: 'center'}}>Signup Form</h2>
+      <h2 style={{ textAlign: 'center'}} className='title'>Sign UP</h2>
       {successful && <p>{successful}</p>}
       <form className="app_form" onSubmit={formik.handleSubmit}>
-      <div className='app_fname'>
-          <label className="firstName">First Name</label>
+      <div >
           <input
             type="text"
-            placeholder="firstName"
+            placeholder="First Name"
+            className = "app_fname"
             name="firstName"
             {...formik.getFieldProps('firstName')}
           />
@@ -46,11 +46,10 @@ const Login = () => {
             <div>{formik.errors.firstName}</div>
           )}
         </div>
-        <div className='app_lname'>
-          <label className="lastName">Last Name</label>
-          <input
+        <div >
+          <input className = "app_lname"
             type="text"
-            placeholder="lastName"
+            placeholder="Last Name"
             name="lastName"
             {...formik.getFieldProps('lastName')}
           />
@@ -58,11 +57,10 @@ const Login = () => {
             <div>{formik.errors.lastName}</div>
           )}
         </div>
-        <div className='app_email'>
-          <label className="email">Email</label>
-          <input
+        <div >
+          <input className = "app_email"
             type="email"
-            placeholder="email"
+            placeholder="Email"
             name="email"
             {...formik.getFieldProps('email')}
           />
@@ -70,11 +68,10 @@ const Login = () => {
             <div>{formik.errors.email}</div>
           )}
         </div>
-        <div className='password'>
-          <label className="password">Password</label>
-          <input
+        <div >
+          <input className = "app_password"
             type="password"
-            placeholder="password"
+            placeholder="Password"
             name="password"
             {...formik.getFieldProps('password')}
           />
@@ -82,10 +79,10 @@ const Login = () => {
             <div>{formik.errors.password}</div>
           )}
         </div>
-        <button type="submit">Submit</button>
+        <button className='login_btn' type="submit">Submit</button>
       </form>
     </div>
-    </div>
+    </section>
   );
 };
 

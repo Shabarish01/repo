@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "../CSS/Header.css";
 import imgHeader from "../components/img/restaurantfood.jpeg"
-import { Link } from 'react-router-dom';
+
 
 const headerData ={
   title: "Little Lemon",
@@ -18,7 +19,7 @@ function Header() {
         <h3 className='app_subheading'>{headerData.subTitle}</h3> <br/>
         <p className='app_description'>{headerData.description}</p>
         <br></br>
-        <Link className="action-button" to="/reservations">Reserve a table</Link>
+        <Link className="action-button" to="/Reservation">Reserve a table</Link>
       </div>
 
       <div className='app_header-img'>

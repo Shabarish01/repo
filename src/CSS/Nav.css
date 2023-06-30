@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fdf4e0;
+    background-color: whitesmoke;
     padding: 20px 80px;
     font-family: 'Markazi Text', serif;
 }
@@ -33,12 +33,13 @@
     transition: all 0.3s ease-in-out;
 }
 .app_navbar-links li a:hover {
-    background-color: yellow;
+    background-color: #f4ce14;
+    transition: 0.25s;
 }
 .app_navbar-links li a:hover::after{
     content: "";
-    width: 30%;
-    height: 2px;
+    width: 50%;
+    height: 1px;
     position: absolute;
     bottom: -4px;
     left: 20px;

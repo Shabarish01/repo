@@ -23,7 +23,6 @@ const Main = () => {
         Price: 9.99,
         ImgUrl: dessert}
 ]
-debugger;
     return (
         <>
         <section className="Main-container">

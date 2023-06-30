@@ -1,5 +1,6 @@
 .app_footer-section{
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
+    margin-top: 1rem;
 }
 .app_footer{
     background-color: rgb(227, 224, 224);
@@ -16,7 +17,7 @@
     flex-wrap: wrap;
    width: auto;
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .app_links{
     width: 150px;
