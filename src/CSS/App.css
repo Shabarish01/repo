@@ -16,7 +16,6 @@ option,
 textarea {
   background-color: #eeeeee;
   border: none;
-  padding: 5px 5px 5px 5px;
   border-radius: 0.2rem;
   resize: none;
 }
@@ -78,22 +77,50 @@ margin-left: 35%;
   margin-bottom: 1rem;
 }
 
-.action-button{
-  margin-left: 35%;
+
+@media only screen and (max-width: 768px) {
+  .booking-heading {
+    margin-left: 10%;
+  }
+
+  .app_booking-table {
+    width: 70%;
+  }
+
+  .action-button {
+    margin-left: 10%;
+  }
 }
+
+/* Media Queries for Mobile Phones */
+@media only screen and (max-width: 480px) {
+  .booking-heading {
+    margin-left: 10%;
+    font-size: medium;
+  }
+
+  .app_booking-table {
+    width: 90%;
+  }
+  .action-button {
+    margin-left: 20%;
+  }
+}
+
 /* Confirmation */
 
 .reserve-header-text{
   display: grid;
   grid-template-columns: auto;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   height: 50vh;
+  color: black;
 }
 
 .redirect-button{
   width: 50%;
-  margin-left: 25%;
+  margin-left: 5%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.62em;

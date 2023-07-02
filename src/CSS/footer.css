@@ -1,6 +1,5 @@
 .app_footer-section{
     padding: 2rem 4rem;
-    margin-top: 1rem;
 }
 .app_footer{
     background-color: rgb(227, 224, 224);
@@ -67,7 +66,6 @@
 }
 .app_footer-below{
     display: flex;
-    
     justify-content: center;
     margin-top: 1rem;
 }

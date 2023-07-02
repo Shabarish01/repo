@@ -26,7 +26,7 @@
 
 .app_navbar-links li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: black;
     text-transform: uppercase;
@@ -34,7 +34,9 @@
 }
 .app_navbar-links li a:hover {
     background-color: #f4ce14;
-    transition: 0.25s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: 0.5s;
 }
 .app_navbar-links li a:hover::after{
     content: "";

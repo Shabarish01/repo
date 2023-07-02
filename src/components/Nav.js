@@ -1,9 +1,9 @@
+import {useState} from "react"
 import { Link } from "react-router-dom";
 import React from "react";
 import logo from "../components/img/Logo.png"
 import "../CSS/Nav.css"
 import {HiMenuAlt4, HiX} from 'react-icons/hi'
-import {useState} from "react"
 
 const Nav = () => {
     const [toggle, setToggle] = useState(false);

@@ -22,15 +22,17 @@
     object-fit: cover;
     
   }
-  .action-button {
+  .action-button-header {
     background-color: #f4ce14;
     border-radius: 0.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
     color: black;
     font-family: "Karla";
+    margin-top: 5%;
     font-size: 1rem;
   }
-  .action-button:hover {
+  .action-button-header:hover {
     background-color: #495e57;
     color: #eeeeee;
     border-style: solid;
