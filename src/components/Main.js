@@ -27,7 +27,7 @@ const Main = () => {
         <>
         <section className="Main-container">
         <div>
-        <h1 className="Main-header">SPECIAL DISHESH!!!</h1>
+        <h1 className="Main-header">SPECIAL DISHES!!!</h1>
         <Link className="action-button" to="/Online">Order Online</Link>
         </div>
         <div className="food-cards">
