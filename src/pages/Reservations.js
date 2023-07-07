@@ -32,7 +32,7 @@ function Reservation() {
               <input className='input-grp'
                 type="text"
                 id='fname'
-                placeholder="firstName"
+                placeholder="First-Name"
                 name="firstName"
                 value={fName}
                 onChange={(e) => setFName(e.target.value)}
@@ -52,7 +52,7 @@ function Reservation() {
               <input  className='input-grp'
                 type="email"
                 id='email'
-                placeholder="email"
+                placeholder="Email"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
