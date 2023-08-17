@@ -9,6 +9,7 @@ import Slider from '@mui/material/Slider';
 import { Link } from 'react-router-dom';
 import img3 from "../components/img/767042.jpg";
 import { Typography } from '@mui/material';
+import moment from 'moment/moment';
 
 function Reservation() {
   const [fName, setFName] = useState("");
@@ -21,7 +22,8 @@ function Reservation() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const today = new Date();
+console.log(today)
   return (
     <>
       <div className='app_booking'>
